@@ -18,7 +18,7 @@ export default function request(url, type = 'GET', data = {}) {
     }
     if(localStorage.token) {
       axios.defaults.headers.common['Authorization']  = localStorage.token
-    }
+    }//设置权限的关键，有token信息即登录，可以设置更多的东西
 
     axios(option).then(res => {
       console.log(res.data)

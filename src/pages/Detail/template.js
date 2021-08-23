@@ -12,7 +12,7 @@ export default {
   },
 
   created() {
-    this.blogId = this.$route.params.blogId
+    this.blogId = this.$route.params.blogId //与路由中的设置对应
     blog.getDetail({ blogId: this.blogId}).then(res => {
       console.log(res)
       this.title = res.data.title

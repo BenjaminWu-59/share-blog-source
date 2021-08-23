@@ -25,4 +25,4 @@ export default {
   install(Vue, options) {
     Vue.prototype.friendlyDate = friendlyDate
   }
-}
+}//做成一个插件了,hhhh
