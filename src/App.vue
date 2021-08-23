@@ -44,11 +44,6 @@ export default {
 
   #main {
     grid-area: main;
-    max-width:1200px;
-    overflow: auto;
-    &::-webkit-scrollbar{
-      display: none;
-    }
   }
 
   #footer {
