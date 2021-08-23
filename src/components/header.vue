@@ -16,8 +16,8 @@
         <ul>
           <li><router-link to="/my">我的</router-link></li>
           <li><a href="#" @click="onLogout">注销</a></li>
-          <li v-if="isLight === false" @click="onNight">夜间</li>
-          <li v-if="isLight === true" @click="onDaytime">日间</li>
+          <li v-if="this.light === false" @click="onNight">夜间</li>
+          <li v-if="this.light === true" @click="onNight">日间</li>
         </ul>
       </div>
     </template>
@@ -42,15 +42,16 @@
         'isLogin',
         'user'
         ]),
-      isLight(){
-        return this.light
+    },
+    watch:{
+      onChangeLight(){
+
       }
     },
-
     created() {
       this.checkLogin()
+      this.light = JSON.parse(localStorage.isLight)
     },
-
     methods: {
       ...mapActions([
         'checkLogin',
@@ -60,13 +61,13 @@
       onLogout() {
         this.logout()
       },
-
       onNight(){
-        this.light = true
+        window.localStorage.setItem('isLight',this.light)
+        const isLight = JSON.parse(localStorage.isLight)
+        this.light = !isLight
+        console.log(this.light)
+        window.localStorage.setItem('isLight',this.light)
       },
-      onDaytime(){
-        this.light = false
-      }
     }
 
   }
