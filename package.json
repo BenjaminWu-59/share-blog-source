@@ -14,6 +14,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.3.9",
+    "http-server": "^13.0.1",
     "less": "^3.11.1",
     "less-loader": "^4.1.0",
     "marked": "^0.4.0",
