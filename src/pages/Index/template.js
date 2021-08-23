@@ -1,4 +1,4 @@
-import blog from '@/api/blog.js'
+import blog from '../../api/blog.js'
 
 
 export default {

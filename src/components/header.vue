@@ -16,8 +16,8 @@
         <ul>
           <li><router-link to="/my">我的</router-link></li>
           <li><a href="#" @click="onLogout">注销</a></li>
-          <li v-if="light === false" @click="onNight">夜间</li>
-          <li v-if="light === true" @click="onDaytime">日间</li>
+          <li v-if="isLight === false" @click="onNight">夜间</li>
+          <li v-if="isLight === true" @click="onDaytime">日间</li>
         </ul>
       </div>
     </template>
@@ -41,7 +41,10 @@
       ...mapGetters([
         'isLogin',
         'user'
-        ])
+        ]),
+      isLight(){
+        return this.light
+      }
     },
 
     created() {
