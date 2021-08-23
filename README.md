@@ -1,8 +1,9 @@
-# blog-client
+# 项目介绍
 
-> A Vue.js project
+这是一个使用了vue router、vuex、axios、webpack、es6、element-ui等技术的小项目。
+做这个项目的目的是为了了解前后端接口的制定、用户注册登录前后的权限设定、vue路由及vuex的使用。
 
-## Build Setup
+## 使用流程
 
 ``` bash
 # install dependencies
