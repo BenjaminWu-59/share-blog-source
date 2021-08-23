@@ -80,7 +80,8 @@
 
 header.no-login {
   padding: 0 12% 30px 12%;
-  background: @bgColor;
+  background: rgb(8,82,77);
+  background: linear-gradient(135deg, rgba(8,82,77,1) 0%, rgba(2,173,143,1) 100%);
   display: grid;
   justify-items: center;
 
@@ -109,7 +110,8 @@ header.no-login {
 header.login {
   display: flex;
   align-items: center;
-  background: @bgColor;
+  background: rgb(8,82,77);
+  background: linear-gradient(135deg, rgba(8,82,77,1) 0%, rgba(2,173,143,1) 100%);
 
   h1 {
     margin: 0;
@@ -171,7 +173,7 @@ header.login {
   }
 }
 header.isLight{
-  background: #3b3b3b;
+  background: #414141;
 }
 
 
