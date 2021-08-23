@@ -1,4 +1,4 @@
-import blog from '@/api/blog'
+import blog from '../../api/blog.js'
 
 export default {
   data () {
@@ -19,7 +19,7 @@ export default {
       this.content = res.data.content
       this.atIndex = res.data.atIndex
     })
-  }, 
+  },
 
   methods: {
     onEdit() {
